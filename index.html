@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Weather</h1>
+
+      <div class="row">
+        <input id="q" placeholder="Search city (e.g., London, Manchester, Paris)" autocomplete="off" />
+        <button id="searchBtn">Search</button>
+        <button id="locBtn">Use my location</button>
+        <select id="units">
+          <option value="metric" selected>Metric (°C, km/h)</option>
+          <option value="imperial">Imperial (°F, mph)</option>
+        </select>
+      </div>
+
+      <div class="status muted" id="status">Tip: search a city or use your location.</div>
+
+      <div id="result" class="result" aria-live="polite">
+        <div class="row rowBottom">
+          <div class="left">
+            <div class="muted" id="place"></div>
+            <div class="big" id="temp"></div>
+            <div class="pill">
+              <span id="summary"></span>
+              <span class="muted">•</span>
+              <span class="muted" id="updated"></span>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="pill"><span>💨</span> <span id="wind"></span></div>
+            <div class="spacer"></div>
+            <div class="pill"><span>💧</span> <span id="humid"></span></div>
+          </div>
+        </div>
+
+        <h2>Next 12 hours</h2>
+        <div class="hourly" id="hourly"></div>
+
+        <h2>7-day forecast</h2>
+        <div class="grid" id="daily"></div>
+      </div>
+    </div>
+
+    <div class="muted footnote">
+      Data: Open-Meteo (weather) + OpenStreetMap Nominatim (geocoding).
+      Lightweight demo—please don’t hammer the search.
+    </div>
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b1220;
+  color: #e7eefc;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row > * {
+  flex: 1;
+}
+
+.rowBottom {
+  align-items: flex-end;
+}
+
+input, button, select {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e7eefc;
+  padding: 12px 12px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 14px;
+  font-weight: 650;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 18px 0 10px;
+}
+
+.muted {
+  color: rgba(231, 238, 252, 0.75);
+  font-size: 13px;
+}
+
+.big {
+  font-size: 44px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.pill {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.day {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.day b {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hourly {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.hour {
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.status {
+  margin-top: 10px;
+}
+
+.error {
+  color: #ffb3b3;
+}
+
+.ok {
+  color: #bfffbf;
+}
+
+.result {
+  margin-top: 16px;
+  display: none;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.spacer {
+  height: 10px;
+}
+
+.footnote {
+  margin-top: 12px;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .hourly {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
