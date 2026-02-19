@@ -45,17 +45,17 @@
 
 <p>Enter a city name or click “Use my location”</p>
 
-<p><bold>Get coordinates</bold></p>
+<h2>Get coordinates</h2>
 
 <p>City names are converted into latitude and longitude</P>
 
 <p>Location uses the browser’s GPS (with permission)</p>
 
-<p><bold>Fetch weather data</bold></p>
+<h2>Fetch weather data</h2>
 
 <p>The app requests weather data from the Open-Meteo API</p>
 
-<p><bold>Update the screen</bold></p>
+<h2>Update the screen</h2>
 
 <u><p>JavaScript displays the current weather, hourly forecast, and 7-day forecast</P></u><br><br>
 <h2>✅ Expected Result</h2>
