@@ -39,9 +39,9 @@
 
 
 
-<h2> How it works</p>
+<h2> How it works</h2>
 
-<p><bold>User chooses a location</bold><p>
+<p>>User chooses a location<p>
 
 <p>Enter a city name or click “Use my location”</p>
 
